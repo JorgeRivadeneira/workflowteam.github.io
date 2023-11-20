@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>WorkflowTeam</title>
+</head>
+<body>
+    <section class="sections page1">
+        <div class="page">
+            <!-- Main Content -->
+            <section class="container">
+                <nav class="navbar">
+                    <div class="navbar__content">
+                        <img src="./public/Logo.svg" alt="logo" />
+                        <ul>
+                            <li><a href="">Servicios</a></li>
+                            <li><a href="">¿Quienes Somos?</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contáctos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <section class="main-content">
+                    <p>Resolvemos problemas</p>
+                    <hr>
+                    <p>con productos digitales</p>
+                    <p>que generen <span>mayores ingresos</span> a las empresas</p>
+                    <button class="boton-mas-info">Quiero más información</button>
+                </section>
+
+                <section class="side-content">
+                    <img src="./public/side-image.png" alt="">
+                </section>
+            </section>
+
+            <!-- Loader -->       
+            <section class="loader">
+
+            </section>
+        </div>
+    </section>
+    <section class="sections page2">
+        
+        <div class="container2">
+            <h2 class="titulo">Nuestros Servicios</h2>
+
+            <div class="grid-item item1">
+                <div class="contenido-imagen">
+                    <div class="imagen-telefono">
+                        <img src="./public/phone.svg">
+                    </div>
+                </div>
+                <div class="card-servicios">
+                    <div class="titulo-card-servicios">
+                        UX Research
+                    </div>
+                    <div class="subtitulo-card-servicios">
+                        Asesoría y Consultoria
+                    </div>
+                    <div class="comentario-card-servicios">
+                        ¿No sabes lo que quiere el mercado ni tus clientes?
+                    </div>                                    
+                </div>
+            </div>
+
+            <div class="grid-item item2">
+                <div class="contenido-imagen">
+                    <div class="imagen-telefono">
+                        <img src="./public/phone.svg">
+                    </div>
+                </div>
+                <div class="card-servicios">
+                    <div class="titulo-card-servicios">
+                        Web App
+                    </div>
+                    <div class="subtitulo-card-servicios">
+                        Solución Completa
+                    </div>
+                    <div class="comentario-card-servicios">
+                        Diseñamos y desarrollamos soluciones completas en la nube..
+                    </div>                                    
+                </div>
+            </div>
+            
+            <div class="grid-item item3">
+                <div class="contenido-imagen">
+                    <div class="imagen-telefono">
+                        <img src="./public/phone.svg">
+                    </div>
+                </div>
+                <div class="card-servicios">
+                    <div class="titulo-card-servicios">
+                        Apps
+                    </div>
+                    <div class="subtitulo-card-servicios">
+                        Solución Completa
+                    </div>
+                    <div class="comentario-card-servicios">
+                        Apps híbridas y nativas para Android e IOS...
+                    </div>                                    
+                </div>
+            </div>              
+
+
+
+            <button class="boton-servicios">Ver todos los servicios</button>
+        </div>
+    </section>
+    <section class="sections page3">
+        <div class="titulo" style="padding-top: 20px;">
+            ¿Cómo lo hacemos?
+        </div>
+
+        <div class="card-como-lo-hacemos">
+            <div class="circulo-celeste" style="width: 120px;">
+                <img src="./public/fig.svg" style="height: 49px; width: 49px"/>
+            </div>
+            <p>
+                Trabajando en equipos con <b>Metodologías “Ágiles”</b>, que generen soluciones que satisfagan tus requerimientos, los del mercado y de tus clientes.
+            </p>
+        </div>
+
+        <div class="card-como-lo-hacemos">
+            <div class="circulo-celeste" style="width: 120px;">
+                <img src="./public/fig1.svg" style="height: 49px; width: 49px"/>
+            </div>
+            <p>
+                Usamos sistemas de <b>Diseño centrado en el usuario UX</b>, que permiten tener una mayor aceptación y facilidad de uso de tu producto.
+            </p>
+        </div>
+        
+        <div class="card-como-lo-hacemos">
+            <div class="circulo-celeste" style="width: 120px;">
+                <img src="./public/fig2.svg" style="height: 49px; width: 49px"/>
+            </div>
+            <p>
+                Te damos el <b>Acompañamiento y soporte</b> necesario, desde la fase inicial (entender el problema) hasta soporte post - entrega de tu producto.
+            </p>
+        </div>
+        
+        <button class="boton-mas-info" style="margin-top: 30px">Quiero más información</button>
+        
+    </section>
+
+    <section class="sections page4">
+        <div class="titulo-pagina4">
+            Déjanos un mensaje
+        </div>
+        
+        <div class="subtitulo">
+            <p style="margin-bottom: 25px;">Te contactaremos para asesorarte y darte mas información, sin compromiso</p>
+        </div>
+
+        <div class="section-forms">
+            <img class="imagen-contactanos" src="./public/contactanos.svg" />
+            <div class="formulario">
+                <form action="/procesar_formulario" method="post">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre / Empresa"><br>
+                    <input type="number" id="telefono" name="telefono" required placeholder="Teléfono"><br>
+                    <input type="email" id="Email" name="Email" required placeholder="Email"><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje (Opcional)"></textarea><br>
+                    <button type="submit" class="boton-mas-info" style="align-items: end; text-align: end;">Enviar</button>
+                </form>                 
+            </div>
+        </div>
+    </section>
+    <!-- <script src="scripts.js"></script>    -->
+</body>
+</html>
