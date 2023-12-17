@@ -17,6 +17,7 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 
 .sections{
@@ -277,6 +278,41 @@ textarea{
     width: 100%;
 }
 
+.container svg {
+    width: 2em;
+    margin-top: -0.6em;
+    cursor: pointer;
+  }
+
+/*Media query para desktop, res > 920px */
+@media only screen and (min-width: 921px) {
+    .menu{
+        display: none;
+    }      
+}  
+
+/*Media query para res menores a 920px */
+@media only screen and (max-width: 920px) {
+    .lista{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        top: 2rem;
+        left: 1.3rem;
+    }
+    .logo{
+        position: absolute;
+        right: 1.3rem;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+       
+}
+
 .navbar{
     grid-area: nav;
     padding: 20px;
@@ -288,7 +324,7 @@ textarea{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    animation: 2s navbar 0.5s ease-in-out;
+    /* animation: 2s navbar 0.5s ease-in-out; */
 }
 
 @keyframes navbar{
